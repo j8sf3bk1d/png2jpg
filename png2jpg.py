@@ -34,12 +34,13 @@ def main(argv):
         elif opt in ("-d", "--delete"):
             delete_after = True
         elif opt in ("-q" "--quality"):
-            if arg < 20:
-                jpg_quality = arg
-            elif arg > 100:
+            q_val = int(arg)
+            if q_val < 20:
+                jpg_quality = 20
+            elif q_val > 100:
                 jpg_quality = 100
             else:
-                jpg_quality = arg
+                jpg_quality = q_val
     
     if directory[-1] != "\\" and directory[-1] != "/":
         print("Error: the target directory " + directory + " should end in a slash")
