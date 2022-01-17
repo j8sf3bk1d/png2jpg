@@ -25,3 +25,5 @@ If a PNG already has a JPG version when running the script, the conversion will 
 -h will print the usage.
 
 Pull Test
+
+Another pull request.
